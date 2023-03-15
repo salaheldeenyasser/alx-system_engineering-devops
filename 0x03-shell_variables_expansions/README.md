@@ -57,28 +57,3 @@ All of the following files are scripts:
 | `101-odd` | Prints every other line from the input, starting with the first line |
 		
 | `102-water_and_str` | Adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result |
-
-
-0-alias
-
-#!/bin/bash
-alias ls="rm *"
-
-1-hello_you
-
-#!/bin/bash
-echo "hello $USER"
-
-2-path
-
-#!/bin/bash
-export PATH=$PATH:/action
-
-3-paths
-
-#!/bin/bash
-echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
-
-4-global_variables
-
-#!/bin/bash
